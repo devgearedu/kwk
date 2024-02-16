@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{AE11B2F6-F8FA-457B-ADF8-1EF504937223}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MyWordPad.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PAboutBox.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MyWordPad">
+        <MSBuild Projects="MyWordPad.dproj"/>
+    </Target>
+    <Target Name="MyWordPad:Clean">
+        <MSBuild Projects="MyWordPad.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MyWordPad:Make">
+        <MSBuild Projects="MyWordPad.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PAboutBox">
+        <MSBuild Projects="PAboutBox.dproj"/>
+    </Target>
+    <Target Name="PAboutBox:Clean">
+        <MSBuild Projects="PAboutBox.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PAboutBox:Make">
+        <MSBuild Projects="PAboutBox.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MyWordPad;PAboutBox"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MyWordPad:Clean;PAboutBox:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MyWordPad:Make;PAboutBox:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

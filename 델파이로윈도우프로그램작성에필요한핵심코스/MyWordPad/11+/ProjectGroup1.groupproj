@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{C8777F5D-98D4-49E3-948C-81A9C9FEEF30}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MyWordPad_Modal.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FormLoad.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MyWordPad_Modal">
+        <MSBuild Projects="MyWordPad_Modal.dproj"/>
+    </Target>
+    <Target Name="MyWordPad_Modal:Clean">
+        <MSBuild Projects="MyWordPad_Modal.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MyWordPad_Modal:Make">
+        <MSBuild Projects="MyWordPad_Modal.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FormLoad">
+        <MSBuild Projects="FormLoad.dproj"/>
+    </Target>
+    <Target Name="FormLoad:Clean">
+        <MSBuild Projects="FormLoad.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FormLoad:Make">
+        <MSBuild Projects="FormLoad.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MyWordPad_Modal;FormLoad"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MyWordPad_Modal:Clean;FormLoad:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MyWordPad_Modal:Make;FormLoad:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

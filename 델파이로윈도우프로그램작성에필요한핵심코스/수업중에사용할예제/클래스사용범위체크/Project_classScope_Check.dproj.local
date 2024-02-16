@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.914,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit160.pas</Transaction>
+    <Transaction>2024-01-25 13:13:38.054,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit160.pas</Transaction>
+    <Transaction>2024-01-25 13:18:17.370,E:\새로운교육자료\테스트프로그램\클래스사용범위체크\Unit1.pas=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit160.pas</Transaction>
+    <Transaction>2024-01-25 13:18:17.370,E:\새로운교육자료\테스트프로그램\클래스사용범위체크\Unit1.dfm=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit160.dfm</Transaction>
+    <Transaction>2024-01-25 13:18:35.649,E:\새로운교육자료\테스트프로그램\클래스사용범위체크\Project_classScope_Check.dproj=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project156.dproj</Transaction>
+    <Transaction>2024-01-25 13:22:10.098,=E:\새로운교육자료\테스트프로그램\클래스사용범위체크\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

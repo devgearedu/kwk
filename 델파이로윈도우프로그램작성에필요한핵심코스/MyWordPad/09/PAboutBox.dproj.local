@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.258,=E:\새로운교육자료\메모장\완성본\uABOUT_dll.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.773,E:\새로운교육자료\메모장\완성본\uABOUT_dll.pas=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\09\uABOUT_dll.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.773,E:\새로운교육자료\메모장\완성본\uABOUT_dll.dfm=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\09\uABOUT_dll.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.511,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit161.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.255,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit161.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.372,C:\Users\user\Documents\Embarcadero\Studio\Projects\Project157.dproj=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\09\PAboutBox.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
