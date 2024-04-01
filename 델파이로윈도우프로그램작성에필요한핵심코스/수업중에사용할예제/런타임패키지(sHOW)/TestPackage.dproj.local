@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.441,=rtl.dcp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.216,C:\Users\user\Documents\Embarcadero\Studio\Projects\Package1.dproj=E:\TestPackage.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.507,=E:\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.896,=vcl.dcp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.169,E:\Testpackage.dfm=E:\uTestpackage.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.169,E:\Testpackage.pas=E:\uTestpackage.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.810,C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit3.dfm=E:\Testpackage.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.224,E:\Unit2.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.648,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.810,C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit3.pas=E:\Testpackage.pas</Transaction>
+    <Transaction>2024-04-01 20:48:37.900,E:\델파이로윈도우프로그램작성에필요한핵심코스\수업중에사용할예제\매개변수타입\uTestpackage.dfm=E:\uTestpackage.dfm</Transaction>
+    <Transaction>2024-04-01 20:48:37.900,E:\델파이로윈도우프로그램작성에필요한핵심코스\수업중에사용할예제\매개변수타입\uTestpackage.pas=E:\uTestpackage.pas</Transaction>
+    <Transaction>2024-04-01 20:48:50.453,E:\델파이로윈도우프로그램작성에필요한핵심코스\수업중에사용할예제\TestPackage.dproj=E:\TestPackage.dproj</Transaction>
+    <Transaction>2024-04-01 20:49:51.370,E:\델파이로윈도우프로그램작성에필요한핵심코스\수업중에사용할예제\런타임패키지(sHOW)\uTestpackage.pas=E:\델파이로윈도우프로그램작성에필요한핵심코스\수업중에사용할예제\매개변수타입\uTestpackage.pas</Transaction>
+    <Transaction>2024-04-01 20:49:51.370,E:\델파이로윈도우프로그램작성에필요한핵심코스\수업중에사용할예제\런타임패키지(sHOW)\uTestpackage.dfm=E:\델파이로윈도우프로그램작성에필요한핵심코스\수업중에사용할예제\매개변수타입\uTestpackage.dfm</Transaction>
+    <Transaction>2024-04-01 20:49:59.433,E:\델파이로윈도우프로그램작성에필요한핵심코스\수업중에사용할예제\런타임패키지(sHOW)\TestPackage.dproj=E:\델파이로윈도우프로그램작성에필요한핵심코스\수업중에사용할예제\TestPackage.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,19 @@
+program MyWordPad;
+
+uses
+  Vcl.Forms,
+  USplash in 'USplash.pas' {SplashForm},
+  UMyFrame in 'UMyFrame.pas' {Frame1: TFrame},
+  UMain in 'UMain.pas' {MainForm},
+  uABOUT in 'uABOUT.pas' {AboutBox};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TSplashForm, SplashForm);
+  Application.CreateForm(TMainForm, MainForm);
+  Application.CreateForm(TAboutBox, AboutBox);
+  Application.Run;
+end.

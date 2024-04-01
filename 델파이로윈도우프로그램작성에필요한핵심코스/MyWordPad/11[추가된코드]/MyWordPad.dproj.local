@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.601,=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\11+\UMain.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.007,=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\11+\USplash.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.039,=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\11+\UMyFrame.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.275,C:\Users\user\Documents\Embarcadero\Studio\Projects\Project3.dproj=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\11+\MyWordPad.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.907,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.776,=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\11+\uABOUT.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="USplash.pas"/>
+    <File Path="USplash.dfm"/>
+    <File Path="UMyFrame.pas"/>
+    <File Path="UMyFrame.dfm"/>
+    <File Path="UMain.pas"/>
+    <File Path="UMain.dfm"/>
+    <File Path="uABOUT.pas"/>
+    <File Path="uABOUT.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
