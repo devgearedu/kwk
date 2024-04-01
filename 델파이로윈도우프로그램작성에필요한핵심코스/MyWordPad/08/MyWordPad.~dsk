@@ -16,32 +16,22 @@ File_13=TSourceModule,'E:\델파이로윈도우프로그램직성에필요한핵
 File_14=TSourceModule,'E:\새로운교육자료\테스트프로그램\완성본\Utest4.pas',0,1,189,19,207,0,0,,
 
 [Modules]
-Module0=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\04\MyWordPad.dproj
-Module1=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\04\USplash.pas
-Module2=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\03\UMain.pas
-Module3=E:\새로운교육자료\메모장\dll호출\UMain.pas
-Count=4
+Module0=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\08\UMain.pas
+Module1=E:\새로운교육자료\메모장\dll호출\UMain.pas
+Count=2
 EditWindowCount=1
 
-[E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\04\MyWordPad.dproj]
-ModuleType=TBaseProject
-
-[E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\04\USplash.pas]
-ModuleType=TSourceModule
-
-[E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\03\UMain.pas]
+[E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\08\UMain.pas]
 ModuleType=TSourceModule
 
 [E:\새로운교육자료\메모장\dll호출\UMain.pas]
 ModuleType=TSourceModule
 
 [EditWindow0]
-ViewCount=4
-CurrentEditView=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\04\MyWordPad.dpr
+ViewCount=2
+CurrentEditView=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\08\UMain.pas
 View0=0
 View1=1
-View2=2
-View3=3
 PercentageSizes=1
 Create=1
 Visible=1
@@ -73,47 +63,25 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 
 [View0]
 CustomEditViewType=TEditView
-Module=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\03\UMain.pas
-CursorX=1
-CursorY=212
-TopLine=207
-LeftCol=1
-Elisions=
-Bookmarks=
-EditViewName=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\03\UMain.pas
-
-[View1]
-CustomEditViewType=TEditView
-Module=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\04\USplash.pas
-CursorX=1
-CursorY=1
-TopLine=1
-LeftCol=1
-Elisions=
-Bookmarks=
-EditViewName=Borland.FormDesignerView
-
-[View2]
-CustomEditViewType=TEditView
-Module=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\04\MyWordPad.dpr
-CursorX=50
-CursorY=14
-TopLine=3
-LeftCol=1
-Elisions=
-Bookmarks=
-EditViewName=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\04\MyWordPad.dpr
-
-[View3]
-CustomEditViewType=TEditView
 Module=E:\새로운교육자료\메모장\dll호출\UMain.pas
-CursorX=1
-CursorY=332
-TopLine=328
+CursorX=54
+CursorY=231
+TopLine=216
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=E:\새로운교육자료\메모장\dll호출\UMain.pas
+
+[View1]
+CustomEditViewType=TEditView
+Module=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\08\UMain.pas
+CursorX=1
+CursorY=121
+TopLine=113
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\08\UMain.pas
 
 [Watches]
 Count=0
@@ -145,6 +113,12 @@ Count=0
 [EmbarcaderoWin32Debugger_AddressBreakpoints]
 Count=0
 
+[EmbarcaderoWin64xDebugger_AddressBreakpoints]
+Count=0
+
+[EmbarcaderoWin64Debugger_AddressBreakpoints]
+Count=0
+
 [EmbarcaderoLinux64Debugger_AddressBreakpoints]
 Count=0
 
@@ -154,19 +128,13 @@ Count=0
 [EmbarcaderoOSX64Debugger_AddressBreakpoints]
 Count=0
 
+[EmbarcaderoIOS64DeviceDebugger_AddressBreakpoints]
+Count=0
+
 [EmbarcaderoAndroid32Debugger_AddressBreakpoints]
 Count=0
 
 [EmbarcaderoAndroid64Debugger_AddressBreakpoints]
-Count=0
-
-[EmbarcaderoWin64xDebugger_AddressBreakpoints]
-Count=0
-
-[EmbarcaderoWin64Debugger_AddressBreakpoints]
-Count=0
-
-[EmbarcaderoIOS64DeviceDebugger_AddressBreakpoints]
 Count=0
 
 [Main Window]
@@ -249,22 +217,27 @@ StayOnTop=0
 [PropertyInspector]
 PercentageSizes=1
 Create=1
-Visible=0
+Visible=1
 Docked=0
 State=0
-Left=5073
-Top=1865
-Width=2026
+Left=229
+Top=2231
+Width=1896
 Height=5490
 MaxLeft=-5
 MaxTop=-10
-ClientWidth=1943
+ClientWidth=1812
 ClientHeight=5413
 TBDockHeight=8731
 LRDockWidth=1896
 Dockable=1
 StayOnTop=0
 SplitPos=111
+
+[PropInspDesignerSelection]
+ArrangeBy=Name
+SelectedItem=Align,
+ExpandedItems=Anchors=0,BevelEdges=0,Constraints=0,Font=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,Padding=0,BorderIcons=0,StyleElements=0,Touch=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -275,11 +248,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=6394
+Height=8462
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=6394
+ClientHeight=8462
 TBDockHeight=5962
 LRDockWidth=2510
 Dockable=1
@@ -292,7 +265,7 @@ Visible=0
 Docked=1
 State=0
 Left=-8
-Top=-124
+Top=-8
 Width=1849
 Height=3144
 MaxLeft=-1
@@ -348,8 +321,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-1528
-Top=245
+Left=0
+Top=0
 Width=276
 Height=365
 MaxLeft=-1
@@ -472,11 +445,11 @@ State=0
 Left=0
 Top=0
 Width=2339
-Height=971
+Height=1212
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2339
-ClientHeight=971
+ClientHeight=1212
 TBDockHeight=2317
 LRDockWidth=2823
 Dockable=1
@@ -537,11 +510,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=6394
+Height=8462
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=6394
+ClientHeight=8462
 TBDockHeight=4885
 LRDockWidth=7151
 Dockable=1
@@ -553,8 +526,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=380
-Top=817
+Left=0
+Top=0
 Width=2854
 Height=3212
 MaxLeft=-1
@@ -620,11 +593,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=6394
+Height=8462
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=6394
+ClientHeight=8462
 TBDockHeight=4885
 LRDockWidth=5307
 Dockable=1
@@ -684,8 +657,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=952
-Top=28
+Left=8
+Top=8
 Width=3823
 Height=1423
 MaxLeft=-1

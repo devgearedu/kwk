@@ -121,20 +121,15 @@ object MainForm: TMainForm
     Caption = 'GridPanel1'
     ColumnCollection = <
       item
-        Value = 26.998610381523650000
+        Value = 1.201927016190600000
       end
       item
-        Value = 71.996294350729770000
+        Value = 97.598502815354880000
       end
       item
-        Value = 1.005095267746583000
+        Value = 1.199570168454523000
       end>
     ControlCollection = <
-      item
-        Column = 0
-        Control = CategoryPanelGroup1
-        Row = 1
-      end
       item
         Column = 1
         Control = RichEdit1
@@ -151,204 +146,10 @@ object MainForm: TMainForm
         Value = 1.960784313725504000
       end>
     TabOrder = 2
-    object CategoryPanelGroup1: TCategoryPanelGroup
-      Left = 1
-      Top = 10
-      Width = 300
-      Height = 421
-      VertScrollBar.Tracking = True
-      Align = alClient
-      HeaderFont.Charset = DEFAULT_CHARSET
-      HeaderFont.Color = clWindowText
-      HeaderFont.Height = -12
-      HeaderFont.Name = 'Segoe UI'
-      HeaderFont.Style = []
-      TabOrder = 0
-      object CategoryPanel4: TCategoryPanel
-        Top = 600
-        Caption = #47532#49828#53944#48624'(TListView)'
-        TabOrder = 0
-        object ListView1: TListView
-          Left = 0
-          Top = 0
-          Width = 277
-          Height = 174
-          Align = alClient
-          Columns = <
-            item
-              Caption = #44053#49324#51060#47492
-              Width = 60
-            end
-            item
-              Caption = #44053#51032#51109
-              Width = 60
-            end
-            item
-              Caption = #44368#50977#51068#49688
-              Width = 70
-            end>
-          TabOrder = 0
-          ViewStyle = vsReport
-        end
-      end
-      object CategoryPanel3: TCategoryPanel
-        Top = 400
-        Caption = #51312#51649#46020'(TTreeView)'
-        TabOrder = 1
-        object TreeView1: TTreeView
-          Left = 0
-          Top = 0
-          Width = 277
-          Height = 174
-          Align = alClient
-          CheckBoxes = True
-          CheckStyles = [csExclusion]
-          Indent = 19
-          TabOrder = 0
-          OnCheckStateChanged = TreeView1CheckStateChanged
-        end
-      end
-      object CategoryPanel2: TCategoryPanel
-        Top = 200
-        Caption = 'ButtonGroup'
-        TabOrder = 2
-        object ButtonGroup1: TButtonGroup
-          Left = 0
-          Top = 0
-          Width = 277
-          Height = 174
-          Align = alClient
-          ButtonOptions = [gboFullSize, gboShowCaptions]
-          Items = <
-            item
-              Caption = #50500#51060#53596'1'
-              Hint = #55180#53944'1'
-            end
-            item
-              Caption = #50500#51060#53596'2'
-              Hint = #55180#53944'2'
-            end
-            item
-              Caption = #50500#51060#53596'3'
-              Hint = #55180#53944'3'
-            end
-            item
-              Caption = #50500#51060#53596'4'
-              Hint = #55180#53944'4'
-            end
-            item
-              Caption = #50500#51060#53596'5'
-              Hint = #55180#53944'5'
-            end
-            item
-              Caption = #50500#51060#53596'6'
-              Hint = #55180#53944'6'
-            end
-            item
-              Caption = #50500#51060#53596'7'
-              Hint = #55180#53944'7'
-            end>
-          TabOrder = 0
-        end
-      end
-      object CategoryPanel1: TCategoryPanel
-        Top = 0
-        Caption = #49660#54609#47785#47197'(TCateGoryButton)'
-        TabOrder = 3
-        object CategoryButtons1: TCategoryButtons
-          Left = 0
-          Top = 0
-          Width = 277
-          Height = 174
-          Align = alClient
-          ButtonFlow = cbfVertical
-          ButtonOptions = [boFullSize, boGradientFill, boShowCaptions, boVerticalCategoryCaptions, boUsePlusMinus]
-          Categories = <
-            item
-              Caption = #51032#47448
-              Color = 16771818
-              Collapsed = True
-              Items = <
-                item
-                  Caption = #53076#53944
-                end
-                item
-                  Caption = #51088#53011
-                end
-                item
-                  Caption = #51652#47448
-                end
-                item
-                  Caption = #49492#52768
-                end
-                item
-                  Caption = #49836#47001#49828
-                end
-                item
-                  Caption = #49828#52964#53944
-                end
-                item
-                  Caption = #45768#53944
-                end>
-            end
-            item
-              Caption = #49800#51592
-              Color = 16771839
-              Collapsed = False
-              Items = <>
-            end
-            item
-              Caption = #50501#49464#49436#47532
-              Color = 16053492
-              Collapsed = False
-              Items = <>
-            end
-            item
-              Caption = #44032#51204#51228#54408
-              Color = 15395839
-              Collapsed = False
-              Items = <>
-            end
-            item
-              Caption = #44032#44396
-              Color = 16771839
-              Collapsed = False
-              Items = <>
-            end
-            item
-              Caption = #49885#54408
-              Color = 16771818
-              Collapsed = False
-              Items = <>
-            end
-            item
-              Caption = #46020#49436
-              Color = 15400959
-              Collapsed = False
-              Items = <>
-            end
-            item
-              Caption = #51020#48152
-              Color = 16777194
-              Collapsed = False
-              Items = <>
-            end
-            item
-              Caption = #54187#50857#54408
-              Color = 15395839
-              Collapsed = False
-              Items = <>
-            end>
-          RegularButtonColor = clWhite
-          SelectedButtonColor = 15132390
-          TabOrder = 0
-        end
-      end
-    end
     object RichEdit1: TRichEdit
-      Left = 301
+      Left = 14
       Top = 10
-      Width = 800
+      Width = 1085
       Height = 421
       Align = alClient
       EnableURLs = True
@@ -360,8 +161,10 @@ object MainForm: TMainForm
       ParentFont = False
       ShowURLHint = True
       SpellChecking = True
-      TabOrder = 1
+      TabOrder = 0
       OnLinkClick = RichEdit1LinkClick
+      ExplicitLeft = 301
+      ExplicitWidth = 800
     end
   end
   object ActionManager1: TActionManager

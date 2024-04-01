@@ -20,10 +20,6 @@ object Frame1: TFrame1
     Padding.Right = 8
     Padding.Bottom = 8
     TabOrder = 0
-    ExplicitLeft = 64
-    ExplicitTop = 64
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object Panel2: TPanel
       AlignWithMargins = True
       Left = 17
@@ -40,10 +36,6 @@ object Frame1: TFrame1
       Padding.Right = 8
       Padding.Bottom = 8
       TabOrder = 0
-      ExplicitLeft = 64
-      ExplicitTop = 88
-      ExplicitWidth = 185
-      ExplicitHeight = 41
       DesignSize = (
         450
         302)

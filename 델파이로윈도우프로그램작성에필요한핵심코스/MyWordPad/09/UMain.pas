@@ -50,21 +50,10 @@ type
     RibbonGroup3: TRibbonGroup;
     RibbonGroup4: TRibbonGroup;
     StatusBar1: TStatusBar;
-    GridPanel1: TGridPanel;
-    CategoryPanelGroup1: TCategoryPanelGroup;
-    RichEdit1: TRichEdit;
-    CategoryPanel1: TCategoryPanel;
-    CategoryPanel2: TCategoryPanel;
-    CategoryPanel3: TCategoryPanel;
-    CategoryPanel4: TCategoryPanel;
-    CategoryButtons1: TCategoryButtons;
-    ButtonGroup1: TButtonGroup;
-    TreeView1: TTreeView;
     TrayIcon1: TTrayIcon;
     JumpList1: TJumpList;
     Taskbar1: TTaskbar;
     RibbonSpinEdit1: TRibbonSpinEdit;
-    ListView1: TListView;
     Timer1: TTimer;
     PopupMenu1: TPopupMenu;
     RibbonPage2: TRibbonPage;
@@ -85,11 +74,11 @@ type
     GestureManager1: TGestureManager;
     About_Static_Action: TAction;
     About_Dynamic_Action: TAction;
+    GridPanel1: TGridPanel;
+    RichEdit1: TRichEdit;
     procedure Windows_ActionExecute(Sender: TObject);
     procedure Silver_ActionExecute(Sender: TObject);
     procedure Auric_ActionExecute(Sender: TObject);
-    procedure TreeView1CheckStateChanged(Sender: TCustomTreeView;
-      Node: TTreeNode; CheckState: TNodeCheckState);
     procedure RichEdit1LinkClick(Sender: TCustomRichEdit; const URL: string;
       Button: TMouseButton);
     procedure StatusBar1DrawPanel(StatusBar: TStatusBar; Panel: TStatusPanel;
@@ -105,7 +94,6 @@ type
     procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
     procedure RichEdit1Change(Sender: TObject);
     procedure About_ActionExecute(Sender: TObject);
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure RichEdit1Gesture(Sender: TObject;
       const EventInfo: TGestureEventInfo; var Handled: Boolean);
     procedure About_Static_ActionExecute(Sender: TObject);
@@ -127,22 +115,13 @@ implementation
 uses uABOUT;//리소스 문자열은 const라는 단어가 리소스 문자열로 대체된다는 점을 제외하면 다른 실제 상수로 선언
 resourcestring
   sOpenLink = 'Open link: %s ?';
-type
-  Delphi_Edu = record
-    Curri_Name : string;
-    Teacher    : string;
-    During     : string;
-  end;
-
-  P_Delphi_Edu = ^Delphi_Edu;
 
 var
   FilePath : string;
   FileName : string;
-  P : P_Delphi_Edu;
 
-procedure Display_About; stdcall;            // static 호출
-external 'PAboutBox.dll';
+function Add(x,y:integer):integer; stdcall;            // static 호출
+external 'PCalc.dll';
 
 {$R *.dfm}
 
@@ -158,7 +137,7 @@ end;
 
 procedure TMainForm.About_Static_ActionExecute(Sender: TObject);
 begin
-    Display_About;
+    ShowMessage(Add(2,3).ToString);
 end;
 
 procedure TMainForm.Auric_ActionExecute(Sender: TObject);
@@ -196,14 +175,6 @@ begin
    FileSaveAs1.Dialog.InitialDir := FilePath;
 end;
 
-procedure TMainForm.FormClose(Sender: TObject; var Action: TCloseAction);
-begin
-   for var I :integer := 0 to TreeView1.Items.Count - 1 do
-       if not TreeView1.Items[i].HasChildren then
-          if TreeView1.Items[i].Data <> nil then
-             Dispose(P_Delphi_Edu(TreeView1.Items[i].Data));
-end;
-
 procedure TMainForm.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
 begin
  if RichEdit1.Lines.Text <> '' then
@@ -214,24 +185,10 @@ begin
 end;
 
 procedure TMainForm.FormCreate(Sender: TObject);
-var
-   TreeNode : TTreeNode;
 begin
    RibbonSpinEdit1.Value := RichEdit1.Font.Size;
    FilePath := ExtractFilePath(Application.ExeName);
    Application.OnHint := ShowHint;
-
-  // treeView 에 노드 추가, 차일드 노드 추가
-  TreeNode := TTreeNode.Create(TreeView1.Items);
-  Treeview1.Selected := Treeview1.Items.Add(TreeNode, '교육부');
-  Treeview1.Items.AddChild(Treeview1.Selected, '자바');
-  new(P);
-  P^.Curri_Name := '델파이필수코스';
-  P^.Teacher := '김원경';
-  P^.During := '3일';
-  Treeview1.Items.AddChildObject( Treeview1.Selected, '델파이',P);
-
-
 end;
 
 function TMainForm.GetCurrLine(RichEdit: TRichEdit): integer;
@@ -316,21 +273,6 @@ begin
   TStyleManager.TrySetStyle('windows');
 end;
 
-procedure TMainForm.TreeView1CheckStateChanged(Sender: TCustomTreeView;
-  Node: TTreeNode; CheckState: TNodeCheckState);
-var
-  ListItem : TListItem;
-begin
-  if  Node.CheckState = ncsChecked then
-    if Treeview1.Selected.Data <> nil then
-    begin
-       ListItem := ListView1.Items.Add;
-       ListItem.Caption :=  P_Delphi_Edu(Treeview1.Selected.Data)^.Curri_Name;
-       ListItem.SubItems.Add(P_Delphi_Edu(Treeview1.Selected.Data)^.Teacher);
-       ListItem.SubItems.Add(P_Delphi_Edu(Treeview1.Selected.Data)^.During);
-    end;
-
-end;
 procedure TMainForm.ExceptionHandler(sender: tobject; e: exception);
 begin
    if e is eFopenError  then

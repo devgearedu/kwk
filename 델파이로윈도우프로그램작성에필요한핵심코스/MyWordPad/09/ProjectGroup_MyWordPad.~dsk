@@ -16,32 +16,22 @@ File_13=TSourceModule,'E:\델파이로윈도우프로그램직성에필요한핵
 File_14=TSourceModule,'E:\새로운교육자료\테스트프로그램\완성본\Utest4.pas',0,1,189,19,207,0,0,,
 
 [Modules]
-Module0=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\09\PAboutBox.dproj
-Module1=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\09\uABOUT_dll.pas
-Module2=E:\새로운교육자료\메모장\dll호출\UMain.pas
-Module3=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\03\UMain.pas
-Count=4
+Module0=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\09\PCalc.dproj
+Module1=E:\새로운교육자료\메모장\dll호출\UMain.pas
+Count=2
 EditWindowCount=1
 
-[E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\09\PAboutBox.dproj]
+[E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\09\PCalc.dproj]
 ModuleType=TBaseProject
-
-[E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\09\uABOUT_dll.pas]
-ModuleType=TSourceModule
 
 [E:\새로운교육자료\메모장\dll호출\UMain.pas]
 ModuleType=TSourceModule
 
-[E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\03\UMain.pas]
-ModuleType=TSourceModule
-
 [EditWindow0]
-ViewCount=4
-CurrentEditView=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\09\PAboutBox.dpr
+ViewCount=2
+CurrentEditView=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\09\PCalc.dpr
 View0=0
 View1=1
-View2=2
-View3=3
 PercentageSizes=1
 Create=1
 Visible=1
@@ -58,9 +48,9 @@ ClientHeight=9000
 DockedToMainForm=1
 BorlandEditorCodeExplorer=BorlandEditorCodeExplorer@EditWindow0
 TopPanelSize=0
-LeftPanelSize=1906
+LeftPanelSize=1896
 LeftPanelClients=PropertyInspector,DockSite3
-LeftPanelData=00000800010100000000620F00000000000001720700000000000001000000005C0E000009000000446F636B53697465330100000000581B00001100000050726F7065727479496E73706563746F72FFFFFFFF
+LeftPanelData=00000800010100000000620F00000000000001680700000000000001000000005C0E000009000000446F636B53697465330100000000581B00001100000050726F7065727479496E73706563746F72FFFFFFFF
 RightPanelSize=2000
 RightPanelClients=DockSite2,DockSite4
 RightPanelData=00000800010100000000620F00000000000001D00700000000000001000000004412000009000000446F636B53697465320100000000581B000009000000446F636B5369746534FFFFFFFF
@@ -73,39 +63,6 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 
 [View0]
 CustomEditViewType=TEditView
-Module=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\03\UMain.pas
-CursorX=1
-CursorY=212
-TopLine=207
-LeftCol=1
-Elisions=
-Bookmarks=
-EditViewName=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\03\UMain.pas
-
-[View1]
-CustomEditViewType=TEditView
-Module=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\09\PAboutBox.dpr
-CursorX=18
-CursorY=25
-TopLine=11
-LeftCol=1
-Elisions=
-Bookmarks=
-EditViewName=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\09\PAboutBox.dpr
-
-[View2]
-CustomEditViewType=TEditView
-Module=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\09\uABOUT_dll.pas
-CursorX=1
-CursorY=1
-TopLine=1
-LeftCol=1
-Elisions=
-Bookmarks=
-EditViewName=E:\델파이로윈도우프로그램직성에필요한핵심코스\MyWordPad\09\uABOUT_dll.pas
-
-[View3]
-CustomEditViewType=TEditView
 Module=E:\새로운교육자료\메모장\dll호출\UMain.pas
 CursorX=1
 CursorY=332
@@ -114,6 +71,17 @@ LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=E:\새로운교육자료\메모장\dll호출\UMain.pas
+
+[View1]
+CustomEditViewType=TEditView
+Module=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\09\PCalc.dpr
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\09\PCalc.dpr
 
 [Watches]
 Count=0
@@ -145,6 +113,12 @@ Count=0
 [EmbarcaderoWin32Debugger_AddressBreakpoints]
 Count=0
 
+[EmbarcaderoWin64xDebugger_AddressBreakpoints]
+Count=0
+
+[EmbarcaderoWin64Debugger_AddressBreakpoints]
+Count=0
+
 [EmbarcaderoLinux64Debugger_AddressBreakpoints]
 Count=0
 
@@ -154,19 +128,13 @@ Count=0
 [EmbarcaderoOSX64Debugger_AddressBreakpoints]
 Count=0
 
+[EmbarcaderoIOS64DeviceDebugger_AddressBreakpoints]
+Count=0
+
 [EmbarcaderoAndroid32Debugger_AddressBreakpoints]
 Count=0
 
 [EmbarcaderoAndroid64Debugger_AddressBreakpoints]
-Count=0
-
-[EmbarcaderoWin64xDebugger_AddressBreakpoints]
-Count=0
-
-[EmbarcaderoWin64Debugger_AddressBreakpoints]
-Count=0
-
-[EmbarcaderoIOS64DeviceDebugger_AddressBreakpoints]
 Count=0
 
 [Main Window]
@@ -254,17 +222,17 @@ Docked=1
 State=0
 Left=0
 Top=425
-Width=1906
+Width=1896
 Height=3183
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1906
+ClientWidth=1896
 ClientHeight=3183
 TBDockHeight=9010
-LRDockWidth=1906
+LRDockWidth=1896
 Dockable=1
 StayOnTop=0
-SplitPos=112
+SplitPos=111
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -600,11 +568,11 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=1906
+Width=1896
 Height=3471
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1906
+ClientWidth=1896
 ClientHeight=3471
 TBDockHeight=3683
 LRDockWidth=1896
@@ -734,14 +702,14 @@ Docked=1
 State=0
 Left=0
 Top=28
-Width=1906
+Width=1896
 Height=3471
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1906
+ClientWidth=1896
 ClientHeight=3471
 TBDockHeight=9010
-LRDockWidth=1906
+LRDockWidth=1896
 Dockable=1
 StayOnTop=0
 TabPosition=1
@@ -773,5 +741,5 @@ ActiveTabID=ToolForm
 TabDockClients=ToolForm,TemplateView
 
 [ActiveProject]
-ActiveProject=2
+ActiveProject=1
 

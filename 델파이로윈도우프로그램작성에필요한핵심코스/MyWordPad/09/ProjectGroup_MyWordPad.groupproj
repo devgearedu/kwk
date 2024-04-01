@@ -6,7 +6,7 @@
         <Projects Include="MyWordPad.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="PAboutBox.dproj">
+        <Projects Include="PCalc.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -26,23 +26,23 @@
     <Target Name="MyWordPad:Make">
         <MSBuild Projects="MyWordPad.dproj" Targets="Make"/>
     </Target>
-    <Target Name="PAboutBox">
-        <MSBuild Projects="PAboutBox.dproj"/>
+    <Target Name="PCalc">
+        <MSBuild Projects="PCalc.dproj"/>
     </Target>
-    <Target Name="PAboutBox:Clean">
-        <MSBuild Projects="PAboutBox.dproj" Targets="Clean"/>
+    <Target Name="PCalc:Clean">
+        <MSBuild Projects="PCalc.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="PAboutBox:Make">
-        <MSBuild Projects="PAboutBox.dproj" Targets="Make"/>
+    <Target Name="PCalc:Make">
+        <MSBuild Projects="PCalc.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="MyWordPad;PAboutBox"/>
+        <CallTarget Targets="MyWordPad;PCalc"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="MyWordPad:Clean;PAboutBox:Clean"/>
+        <CallTarget Targets="MyWordPad:Clean;PCalc:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="MyWordPad:Make;PAboutBox:Make"/>
+        <CallTarget Targets="MyWordPad:Make;PCalc:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

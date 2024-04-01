@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.711,=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\06\USplash_Modal.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.344,E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\06\MyWordPad_Modal.dproj=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\06\MyWordPad_Modal.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.024,=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\06\UMain.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.639,=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\06\UMyFrame.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.294,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024-02-16 18:52:06.173,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024-02-16 18:52:24.711,=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\06\USplash_Modal.pas</Transaction>
-    <Transaction>2024-02-16 18:52:25.024,=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\06\UMain.pas</Transaction>
-    <Transaction>2024-02-16 18:53:02.112,E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\06\MyWordPad_Modal.dproj=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2024-02-16 18:53:10.639,=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\06\UMyFrame.pas</Transaction>
-    <Transaction>2024-02-16 18:57:05.344,E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\06\MyWordPad_Modal.dproj=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\06\MyWordPad_Modal.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.173,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.112,C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1.dproj=E:\델파이로윈도우프로그램작성에필요한핵심코스\MyWordPad\06\MyWordPad_Modal.dproj</Transaction>
   </Transactions>
 </BorlandProject>

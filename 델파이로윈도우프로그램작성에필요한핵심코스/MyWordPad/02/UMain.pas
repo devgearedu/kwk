@@ -51,20 +51,11 @@ type
     RibbonGroup4: TRibbonGroup;
     StatusBar1: TStatusBar;
     GridPanel1: TGridPanel;
-    CategoryPanelGroup1: TCategoryPanelGroup;
     RichEdit1: TRichEdit;
-    CategoryPanel1: TCategoryPanel;
-    CategoryPanel2: TCategoryPanel;
-    CategoryPanel3: TCategoryPanel;
-    CategoryPanel4: TCategoryPanel;
-    CategoryButtons1: TCategoryButtons;
-    ButtonGroup1: TButtonGroup;
-    TreeView1: TTreeView;
     TrayIcon1: TTrayIcon;
     JumpList1: TJumpList;
     Taskbar1: TTaskbar;
     RibbonSpinEdit1: TRibbonSpinEdit;
-    ListView1: TListView;
     Timer1: TTimer;
     PopupMenu1: TPopupMenu;
     RibbonPage2: TRibbonPage;
@@ -85,8 +76,6 @@ type
     procedure Windows_ActionExecute(Sender: TObject);
     procedure Silver_ActionExecute(Sender: TObject);
     procedure Auric_ActionExecute(Sender: TObject);
-    procedure TreeView1CheckStateChanged(Sender: TCustomTreeView;
-      Node: TTreeNode; CheckState: TNodeCheckState);
     procedure RichEdit1LinkClick(Sender: TCustomRichEdit; const URL: string;
       Button: TMouseButton);
     procedure StatusBar1DrawPanel(StatusBar: TStatusBar; Panel: TStatusPanel;
@@ -115,19 +104,10 @@ implementation
 //리소스 문자열은 const라는 단어가 리소스 문자열로 대체된다는 점을 제외하면 다른 실제 상수로 선언
 resourcestring
   sOpenLink = 'Open link: %s ?';
-type
-  Delphi_Edu = record
-    Curri_Name : string;
-    Teacher    : string;
-    During     : string;
-  end;
-
-  P_Delphi_Edu = ^Delphi_Edu;
 
 var
   FilePath : string;
   FileName : string;
-  P : P_Delphi_Edu;
 
 {$R *.dfm}
 
@@ -229,19 +209,4 @@ begin
   TStyleManager.TrySetStyle('windows');
 end;
 
-procedure TMainForm.TreeView1CheckStateChanged(Sender: TCustomTreeView;
-  Node: TTreeNode; CheckState: TNodeCheckState);
-var
-  ListItem : TListItem;
-begin
-  if  Node.CheckState = ncsChecked then
-    if Treeview1.Selected.Data <> nil then
-    begin
-       ListItem := ListView1.Items.Add;
-       ListItem.Caption :=  P_Delphi_Edu(Treeview1.Selected.Data)^.Curri_Name;
-       ListItem.SubItems.Add(P_Delphi_Edu(Treeview1.Selected.Data)^.Teacher);
-       ListItem.SubItems.Add(P_Delphi_Edu(Treeview1.Selected.Data)^.During);
-    end;
-
-end;
 end.
