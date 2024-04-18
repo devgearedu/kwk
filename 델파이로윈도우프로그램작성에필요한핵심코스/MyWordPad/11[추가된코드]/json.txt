@@ -1,0 +1,39 @@
+if DeptTable.state = dsInactive then
+        DeptTable.Open;
+
+    Writer := TJsonObjectWriter.Create;
+    try
+      Writer.WriteStartObject;
+  // start resource;
+      Writer.WritePropertyName('depts');
+      Writer.WriteStartObject;
+  // start item
+      Writer.WritePropertyName('total');
+      Writer.WriteValue(deptTable.RecordCount);
+
+      Writer.WritePropertyName('dept');
+      Writer.WriteStartArray;
+      DeptTable.First;
+      while not DeptTable.Eof do
+      begin
+        Writer.WriteStartObject;
+        Writer.WritePropertyName('code');
+        Writer.WriteValue(DeptTable.FieldByName('code').Asstring);
+        Writer.WritePropertyName('dept');
+        Writer.WriteValue(DeptTable.FieldByName('Dept').AsString);
+        Writer.WritePropertyName('section');
+        Writer.WriteValue(DeptTable.FieldByName('section').AsString);
+        Writer.WriteEndObject;
+        DeptTable.Next;
+      end;
+      Writer.WriteEndArray;
+      Writer.WriteEndObject;
+  // end item
+      Writer.WriteEndObject;
+  // end resource
+      result := TJSONValue(writer.json);
+    except
+      Writer.Free;
+      raise;
+    end;
+//end;
