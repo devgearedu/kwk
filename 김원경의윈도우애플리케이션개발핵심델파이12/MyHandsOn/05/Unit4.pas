@@ -41,6 +41,13 @@ type
    Constructor Create; override;
    function GetSalary:integer; override;
  end;
+
+ THourly = class(TEmployee)
+   Hrs :integer;
+   Rate :integer;
+   Constructor Create; override;
+   function GetSalary:integer; override;
+ end;
 //·¹ÄÚµå
  TPerson_Rec = record
     Name    : string;
@@ -162,6 +169,21 @@ end;
 function TSalary.GetSalary: integer;
 begin
    result := 5000000;
+end;
+
+{ THourly }
+
+constructor THourly.Create;
+begin
+  inherited;
+  inherited;
+  Hrs := 10;
+  Rate := 100000;
+end;
+
+function THourly.GetSalary: integer;
+begin
+  result := Hrs * Rate;
 end;
 
 initialization
